@@ -9,8 +9,6 @@ SyntheOcc is a project focused on synthesizing image data under geometry control
 
 ## Table of Contents
 
-- [SyntheOcc](#syntheocc)
-      - [Project Page | Paper | Video](#project-page--paper--video)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Prepare Dataset](#prepare-dataset)
