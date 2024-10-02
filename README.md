@@ -66,19 +66,19 @@ To use SyntheOcc, follow the steps below:
 
     You need to generate the high resolution 0.2m occupancy from mesh vertices and put them in `data/nuscenes` folder.
 
-    You can also download the 0.5m occupancy. The precision may be limited.
+    You can also download the 0.5m occupancy. The precision may be limited compared with 0.2m.
 
 
 3. **Run the script to convert occupancy to 3D semantic multiplane images:**
    ```bash
-   python utils/gen_mtp.py
+   torchrun utils/gen_mtp.py
    ```
    It will generate the 3D semantic MPI and save them in `data/nuscenes/samples_syntheocc_surocc/` folder.
 
 ## Prepare Checkpoint
 Our model is based on [stable-diffusion-v2-1](https://huggingface.co/stabilityai/stable-diffusion-v2-1). Please put them at `./SyntheOcc/ckp/`.
 
-Our checkpoint of SyntheOcc will be realeased soon.
+Our checkpoint of SyntheOcc will be released soon.
 
 ## Train 
 
@@ -118,7 +118,7 @@ accelerate launch --gpu_ids 0, --num_processes 1  --main_process_port 3226  trai
     --resume_from_checkpoint="latest" 
 ```
 
-The training process will take 1~2 days to complete, depending on the hardware. We use a fixed batchsize=1, image resolution = (800, 448), which will take 25GB memory each GPU.
+The training process will take 1~2 days to complete, depending on the hardware. We use a fixed batchsize=1, image resolution = (800, 448), which will take 25GB memory for each GPU.
 
 ## Inference 
 
@@ -134,8 +134,8 @@ You will find generated images at `./ckp/$EXP_NAME/samples`. The image is shown 
 Additionally, we express our gratitude to the authors of the following opensource projects:
 
 - [SurroundOcc](https://github.com/weiyithu/SurroundOcc) (Occupancy annotation)
-- [MagicDrive](https://github.com/cure-lab/MagicDrive) (Cross-view and cross-frame attention inplementation)
-- [Diffusers controlnet example](https://github.com/huggingface/diffusers/tree/main/examples/controlnet) (Diffusion model inplementation)
+- [MagicDrive](https://github.com/cure-lab/MagicDrive) (Cross-view and cross-frame attention implementation)
+- [Diffusers controlnet example](https://github.com/huggingface/diffusers/tree/main/examples/controlnet) (Diffusion model implementation)
 
 
 
