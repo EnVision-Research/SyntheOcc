@@ -4,9 +4,7 @@
 > [Leheng Li](https://len-li.github.io), Weichao Qiu, Yingjie Cai, Xu Yan, Qing Lian, Bingbing Liu, Ying-Cong Chen
 
 SyntheOcc is a project focused on synthesizing image data under geometry control (occupancy voxel). This repository provides tools and scripts to process, train, and generate synthetic image data in the nuScenes dataset, using occupancy control.
-#### [Project Page](https://len-li.github.io/syntheocc-web) | [Paper](https://arxiv.org/) | [Video](https://len-li.github.io/syntheocc-web/videos/teaser-occedit.mp4) 
-
-<!-- | [Checkpoint]() -->
+#### [Project Page](https://len-li.github.io/syntheocc-web) | [Paper](https://arxiv.org/) | [Video](https://len-li.github.io/syntheocc-web/videos/teaser-occedit.mp4) | [Checkpoint](https://huggingface.co/lilelife/SyntheOcc)
 
 
 ## Table of Contents
@@ -78,7 +76,7 @@ To use SyntheOcc, follow the steps below:
 ## Prepare Checkpoint
 Our model is based on [stable-diffusion-v2-1](https://huggingface.co/stabilityai/stable-diffusion-v2-1). Please put them at `./SyntheOcc/ckp/`.
 
-Our checkpoint of SyntheOcc will be released soon.
+Our checkpoint of SyntheOcc is released in [huggingface](https://huggingface.co/lilelife/SyntheOcc). If you want to use our model to run inference. Please also put them at `./SyntheOcc/ckp/`.
 
 ## Train 
 
@@ -134,6 +132,7 @@ You will find generated images at `./ckp/$EXP_NAME/samples`. The image is shown 
 Additionally, we express our gratitude to the authors of the following opensource projects:
 
 - [SurroundOcc](https://github.com/weiyithu/SurroundOcc) (Occupancy annotation)
+- [OpenOccupancy](https://github.com/JeffWang987/OpenOccupancy) (Occupancy annotation)
 - [MagicDrive](https://github.com/cure-lab/MagicDrive) (Cross-view and cross-frame attention implementation)
 - [Diffusers controlnet example](https://github.com/huggingface/diffusers/tree/main/examples/controlnet) (Diffusion model implementation)
 
