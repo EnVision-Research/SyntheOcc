@@ -143,12 +143,12 @@ Additionally, we express our gratitude to the authors of the following opensourc
 ## BibTeX
 
 ```bibtex
-@inproceedings{li2024SyntheOcc,
-              title={SyntheOcc: Synthesize Geometric Controlled Street View Images through 3D Semantic MPIs},
-              author={Li, Leheng and Qiu, Weichao and Chen, Ying-Cong et.al.},
-              booktitle={arxiv preprint},
-              year={2024}
-            }
+@article{li2024syntheocc,
+  title={SyntheOcc: Synthesize Geometric-Controlled Street View Images through 3D Semantic MPIs},
+  author={Li, Leheng and Qiu, Weichao and Cai, Yingjie and Yan, Xu and Lian, Qing and Liu, Bingbing and Chen, Ying-Cong},
+  journal={arXiv preprint arXiv:2410.00337},
+  year={2024}
+}
 ```
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
