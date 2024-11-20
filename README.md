@@ -3,17 +3,26 @@
 > SyntheOcc: Synthesize Geometric-Controlled Street View Images through 3D Semantic MPIs <br>
 > [Leheng Li](https://len-li.github.io), Weichao Qiu, Yingjie Cai, Xu Yan, Qing Lian, Bingbing Liu, Ying-Cong Chen
 
+Update (24.11.20): add video generation results in project page.
+
 SyntheOcc is a project focused on synthesizing image data under geometry control (occupancy voxel). This repository provides tools and scripts to process, train, and generate synthetic image data in the nuScenes dataset, using occupancy control.
 #### [Project Page](https://len-li.github.io/syntheocc-web) | [Paper](https://arxiv.org/) | [Video](https://len-li.github.io/syntheocc-web/videos/teaser-occedit.mp4) | [Checkpoint](https://huggingface.co/lilelife/SyntheOcc)
 
 
+![video generation](ckp/video.gif)
+
 ## Table of Contents
 
+- [SyntheOcc](#syntheocc)
+      - [Project Page | Paper | Video | Checkpoint](#project-page--paper--video--checkpoint)
+  - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Prepare Dataset](#prepare-dataset)
   - [Prepare Checkpoint](#prepare-checkpoint)
   - [Train](#train)
   - [Inference](#inference)
+  - [Acknowledgment](#acknowledgment)
+  - [BibTeX](#bibtex)
 
 
 
