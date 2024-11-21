@@ -83,7 +83,7 @@ To use SyntheOcc, follow the steps below:
    It will generate the 3D semantic MPI and save them in `data/nuscenes/samples_syntheocc_surocc/` folder.
 
 ## Prepare Checkpoint
-Our model is based on [stable-diffusion-v2-1](https://huggingface.co/stabilityai/stable-diffusion-v2-1). Please put them at `./SyntheOcc/ckp/`.
+Our model is based on [stable-diffusion-v2-1](https://huggingface.co/stabilityai/stable-diffusion-2-1). Please put them at `./SyntheOcc/ckp/`.
 
 Our checkpoint of SyntheOcc is released in [huggingface](https://huggingface.co/lilelife/SyntheOcc). If you want to use our model to run inference. Please also put them at `./SyntheOcc/ckp/`.
 
